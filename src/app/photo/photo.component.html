@@ -1,0 +1,14 @@
+<div>
+  <button (click)="changePhoto()" type="button" class="btn btn-primary">
+    Get a new photo!
+  </button>
+</div>
+<!-- <img src="/assets/test.jpg" alt="Image" /> -->
+<picture>
+  <img
+    *ngIf="photoLink"
+    [src]="photoLink"
+    class="img-fluid img-thumbnail"
+    alt="..."
+  />
+</picture>
